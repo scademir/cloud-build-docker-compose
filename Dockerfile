@@ -5,6 +5,7 @@ ARG version=1.24.0
 # https://docs.docker.com/compose/install/
 RUN \
    apt-get -y update && \
+   apt-get -y install curl && \
    apt -y install ca-certificates && \
 #   rm -rf /var/lib/apt/lists/* && \
    curl -L "https://github.com/docker/compose/releases/download/$version/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose && \
