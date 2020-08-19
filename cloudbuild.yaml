@@ -14,11 +14,11 @@ steps:
   - '-t'
   - 'gcr.io/$PROJECT_ID/docker-compose:1.24.0'
   - '.'
-  - name: 'gcr.io/$PROJECT_ID/docker-compose'
+- name: 'gcr.io/$PROJECT_ID/docker-compose'
   args: ['version']
 
 images:
   - 'gcr.io/$PROJECT_ID/docker-compose:latest'
   - 'gcr.io/$PROJECT_ID/docker-compose:1.24.0'
-tags: ['cloud-builders-community']
+#tags: ['cloud-builders-community']
 
